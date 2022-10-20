@@ -172,4 +172,4 @@ Por lo tanto tenemos que estar seguros que cuando llamamos a un función recursi
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M1/blob/master/08-Algoritmos-II/homework/README.md)
+Completa la tarea descrita en el archivo [README](./homework/README.md)

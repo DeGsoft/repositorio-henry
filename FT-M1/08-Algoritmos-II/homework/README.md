@@ -25,7 +25,7 @@ Al finalizar la homework, serás capaz de:
 ## 📋 Instrucciones preliminares
 
 1. Para ubicarte dentro de la carpeta homework escribe en tu terminal los siguientes comandos:
-   -  cd + [07-Algoritmos-II].
+   -  cd + [08-Algoritmos-II].
    -  cd + [homework].
 2. Luego, instalaremos las dependencias con el comando:
 
