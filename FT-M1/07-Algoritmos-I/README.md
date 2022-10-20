@@ -465,4 +465,4 @@ Como verán la perfomance cambia drásticamente según el orden original de los 
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M1/blob/master/07-Algoritmos-I/homework/README.md)
+Completa la tarea descrita en el archivo [README](./homework/README.md)
