@@ -16,7 +16,19 @@ const {
 
 var countArray = function(array) {
     // Tu código aca:
-    
+    var sum = 0;
+    // Si es array, recorrer
+    if (Array.isArray(array)) {
+        // Sumar todos los elementos
+        sum += array.reduce(function (acc, cur) {
+            return acc + countArray(cur);
+        },0);
+    //Sino, sumar valor
+    } else {
+        sum += array;
+    }
+    // Devolver suma
+    return sum;
 }
 
 
@@ -40,20 +52,46 @@ var countArray = function(array) {
 var countProps = function(obj) {
     // Tu código aca:
 
+    var count = 0;
+    for (const key in obj) {
+        var e = obj[key];
+        if (Object.hasOwnProperty.call(obj, key)) {
+          if (typeof(e) === 'object') 
+            if (!Array.isArray(e)) count += countProps(e);     
+          count++;
+        }
+    }
+    return count;
 }
 
 
-// Implementar el método changeNotNumbers dentro del prototype de LinkedList que deberá cambiar
-// aquellos valores que no puedan castearse a numeros por 'Kiricocho' y devolver la cantidad de cambios que hizo
-// Aclaracion: si el valor del nodo puede castearse a número NO hay que reemplazarlo
+// Implementar el método changeNotNumbers dentro del prototype de LinkedList que deberá cambiar.
+// aquellos valores que no puedan castearse a numeros por 'Kiricocho' y devolver la cantidad de 
+//  cambios que hizo.
+// Aclaracion: si el valor del nodo puede castearse a número NO hay que reemplazarlo.
 // Ejemplo 1:
 //    Suponiendo que la lista actual es: Head --> [1] --> ['2'] --> [false] --> ['Franco']
 //    lista.changeNotNumbers();
-//    Ahora la lista quedaría: Head --> [1] --> ['2'] --> [false] --> ['Kirikocho] y la función debería haber devuelto el valor 1
+//    Ahora la lista quedaría: Head --> [1] --> ['2'] --> [false] --> ['Kirikocho] y la función 
+//      debería haber devuelto el valor 1.
 
 LinkedList.prototype.changeNotNumbers = function(){
     // Tu código aca:
+    
+    // Recorrer lista
 
+    // Empezamos en la cabeza
+    var current = this.head; 
+    // Si esta vacia
+    if (!current) return null; 
+    // Buscamos
+    while(current) {
+        // Si es función
+        if (typeof value === 'string')
+            value = 'Kiricocho';
+        // Si no lo encontramos, seguimos
+        current = current.next;
+    }
 }
 
 
