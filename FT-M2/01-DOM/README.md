@@ -224,4 +224,4 @@ El evento más común es el de 'click' y en particular es el único que posee la
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M2/blob/master/01-DOM/homework/README.md)
+Completa la tarea descrita en el archivo [README](../01-DOM/homework/README.md)
