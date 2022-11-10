@@ -187,7 +187,7 @@ Bien, ahora que sabemos algo sobre módulos, veamos cómo estos revolucionaron l
 
 Como sabemos, la forma de importar librerías (que a su vez son módulos) en HTML es la siguiente:
 
-![scripts](/_src/assets/05-Bundlers/scripts.jpeg)
+![scripts](../_src/assets/05-Bundlers/scripts.jpeg)
 
 Si pensamos en detalle que sucede cuando importamos cada uno de esos scripts, veremos que básicamente todos terminan cayendo al mismo contexto, el global. Para salvar esto, las librerías básicamente elegían arbitrariamente un nombre de variable donde exponer su funcionalidad. Por ejemplo, `jQuery` utilizaba el signo `$`. Ahora bien, si otra librería decidía utilizar el mismo nombre de variable para su interfaz, tendríamos un conflicto, y ambas librerías no podrían ser usadas en el mismo HTML.
 
@@ -195,7 +195,7 @@ Al principio, sólo se importaba una cantidad pequeñas de librerías para el fr
 
 Acá aparecieron los **Module Bundlers**. Como por ejemplo: `Browserify`, `Webpack`, `Rollup`, etc... Básicamente lo que hacen es ejecutar un proceso que lee todas las dependencias de nuestro proyecto, y luego genera un archivo JS que contiene todos los módulos necesarios que podemos incluir en nuestro HTML.
 
-![Dependecy Graph](/_src/assets/05-Bundlers/graph.png)
+![Dependecy Graph](../_src/assets/05-Bundlers/graph.png)
 
 Hay dos cosas etapas en tarea de un Bundler:
 
@@ -210,4 +210,4 @@ Una vez hecho esto, podés empaquetar o convertir todo tu grafo de dependencias 
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M2/blob/master/05-Bundlers/homework/README.md)
+Completa la tarea descrita en el archivo [README](./homework/README.md)

@@ -55,7 +55,7 @@ Esto es a lo que nos referimos cuando hablamos de IIFEs - nos dan una forma de i
 
 Por mucho tiempo, este patrón fue fuertemente confiado en proveer modularidad en Javascript, porque cualquier variable declarada dentro de un IIFE pertenecería solo al scope de esa función - no contaminarían el scope global.
 
-Vamos a ver porque eso es importante en un momento - por ahora, si te sentís cómodo en tu entendimiento de como operan las IIFE operan, estas listo para continuar leyendo!
+Vamos a ver porque eso es importante en un momento - por ahora, si te sentís cómodo en tu entendimiento de como las IIFE operan, estas listo para continuar leyendo!
 
 ### Script Tags y Browser Javascript
 
@@ -225,7 +225,7 @@ var foo = "no sweat"; // no tiene idea que usamos el mismo nombre para una varia
 someFunc(); // 42
 ```
 
-Salirse del browser permitió a Node implementar un sistema de módulos en JS, basado en un sistema propuesto por ![CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1.1), que ayudo a elevar a JavaScript a ser un "lenguaje de programación real" en los ojos de muchos.
+Salirse del browser permitió a Node implementar un sistema de módulos en JS, basado en un sistema propuesto por [CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1.1), que ayudo a elevar a JavaScript a ser un "lenguaje de programación real" en los ojos de muchos.
 
 Sin embargo, solo JavaScript del lado del servidor puede usar `require` y `module.exports` - JavaScript escrito en browsers todavía era renegado a los riesgos y fragilidades de tags `<scripts>`. Sin embargo, ahora que hemos experimentado modularidad real con Node, nos debemos preguntar - ¿podemos implementar un sistema de módulos real para JavaScript desde browser también? ¿Hay una herramienta que podamos crear para que podamos esencialmente usar `require` y `module.exports` en nuestro Javascript para el browser también?
 
@@ -235,7 +235,7 @@ La respuesta a esa pregunta en la sección anterior es si, por supuesto! Herrami
 
 ## Punto de Arranque
 
-En primer lugar para que vean la apllicación funcionando pueden, luego de ejecutar el `npm install` hacer un `npm start` e ingresar a la URL que les indica por consola para ver el whiteboard funcionando. A partir de ahora la idea será hacer unn refactor de la aplicación para aplicar lo visto en la clase de módulos pero sin modificar la funcionalidad en sí de la aplicación.
+En primer lugar para que vean la apllicación funcionando pueden, luego de ejecutar el `npm install` hacer un `npm start` e ingresar a la URL que les indica por consola para ver el whiteboard funcionando. A partir de ahora la idea será hacer un refactor de la aplicación para aplicar lo visto en la clase de módulos pero sin modificar la funcionalidad en sí de la aplicación.
 
 ### Entendiendo Nuestras Dependencias
 
