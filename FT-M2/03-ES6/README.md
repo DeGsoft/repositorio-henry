@@ -27,13 +27,13 @@ El ES6 ,también conocido como ECMAScript 2015 o ES2015+, es la última versión
 
 Desde su aparición en 1995, JS fue evolucionando lentamente. ECMAScript apareció como standart en 1997, y desde ahí viene lanzando nuevas versiones como ES3, ES5, ES6, etc..
 
-![no-box](/_src/assets/03-ES6/jsevo.png)
+![no-box](../_src/assets/03-ES6/jsevo.png)
 
 Como ven entre ES3 y ES5 pasaron _10 años_ y entre ES5 y ES6 pasaron _6 años_. Ahora la idea es lanzar nuevas versiones con cambios pequeños cada año.
 
 > Podemos ver un _mapa_ de las compatibilidades actuales de varios engines con respecto al nuevo standart [acá](http://kangax.github.io/compat-table/es6/)
 
-![Compatibilidad](/_src/assets/03-ES6/es6-javascript-support.png)
+![Compatibilidad](../_src/assets/03-ES6/es6-javascript-support.png)
 
 Como todavía no es compatible con muchos browsers, para poder utilizarlo vamos a utilizar una librería llamada `babel.js` que nos servirá para traducir código _ES6_ a la versión actual para así mantener compatibilidad con los engines actuales.
 
@@ -573,4 +573,4 @@ Veamos algunas en la página de [babel](https://babeljs.io/docs/setup/) y elijam
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M2/blob/master/03-ES6/homework/README.md)
+Completa la tarea descrita en el archivo [README](../03-ES6/homework/README.md)
