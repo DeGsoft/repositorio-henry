@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  postgres:
+    image: 'postgres:15'
+    restart: always
+    volumes:
+      - './postgres_data:/var/lib/postgresql/data'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+      POSTGRES_DB: henry_sequelize
+    ports:
+      - '5432:5432'

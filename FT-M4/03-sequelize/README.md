@@ -156,4 +156,4 @@ User.destroy(
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M4/tree/master/03-sequelize/homework)
+Completa la tarea descrita en el archivo [README](../03-sequelize/homework/README.md)
