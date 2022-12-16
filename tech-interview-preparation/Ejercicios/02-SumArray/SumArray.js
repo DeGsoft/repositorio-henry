@@ -1,8 +1,8 @@
 function SumArray(arr, n) {
   // Your code here:
-  return resolve1(arr, n) && resolve2(arr, n) && resolve3(arr, n);
+  return solve1(arr, n) && solve2(arr, n) && solve3(arr, n);
 
-  function resolve1(arr, n) {
+  function solve1(arr, n) {
     for (let i = 0; i < arr.length - 1; i++) {
       for (let j = i + 1; j < arr.length; j++) {
         if (arr[i] + arr[j] === n) return true;
@@ -11,7 +11,7 @@ function SumArray(arr, n) {
     return false;
   }
 
-  function resolve2(arr, n) {
+  function solve2(arr, n) {
     arr.sort((a, b) => a - b);
     let min = 0,
       max = arr.length - 1;
@@ -23,7 +23,7 @@ function SumArray(arr, n) {
     return false;
   }
 
-  function resolve3(arr, n) {
+  function solve3(arr, n) {
     return arr.reduce((subsets, value) => subsets.concat(
       subsets.map(set => [value, ...set])
     ), [[]])
