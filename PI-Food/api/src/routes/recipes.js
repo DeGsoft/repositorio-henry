@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const { Recipe } = require('../db');
+const { getAllRecipies } = require('../middleware/getDb.js')
 
 const endpoint = '/recipes/';
 const errPost = 'Error data provided';
@@ -11,9 +12,10 @@ Obtener un listado de las recetas que contengan la palabra
 ingresada como query parameter
 Si no existe ninguna receta mostrar un mensaje adecuado
 */
-router.get(endpoint, function (req, res, next) {
+router.get(endpoint, async function (req, res, next) {
     const { name } = req.query;
     const condition = { where: { name } };
+    await getAllRecipies();
     const recipes = Recipe.findAll(
         condition
     );
