@@ -1,0 +1,8 @@
+.start .divImg {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10.4rem;
+    background-image: "url(/images/cooking.png)";
+}
